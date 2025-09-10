@@ -1,0 +1,55 @@
+*{
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+h1{
+    background-color: greenyellow;
+    height: 150px;
+    width: 250px;
+    border: 5px solid blue;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 50px;
+    display: inline-block;
+    box-sizing: content-box;
+}
+
+h2{
+    background-color: pink;
+    border: 5px solid red;
+    padding: 10px;
+    display: inline-block;
+    height: 150px;
+    width: 250px;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+.pid{
+    background-color: burlywood;
+    padding: 20px;
+    border: 5px solid green;
+    margin: 20px;
+}
+
+p{
+    background-color: rgb(135, 181, 222);
+    border: 5px solid orange;
+    padding: 20px 40px ;
+    margin: 8px;
+
+
+}
+span{
+    color: red;
+    font-weight: bolder;
+    font-size: larger;
+    display: block;
+    background-color: gold; /*only visible not implemented*/
+    height: 30px; /*not appy this h,w*/
+
+    margin: px;
+    padding: 5px;
+}
