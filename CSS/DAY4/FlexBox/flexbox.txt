@@ -1,0 +1,6 @@
+display flex property means to covert block elements to inline elements
+flex-direction :row,columun(reverse for both)
+justify-content property;
+Main Axix and cross Axis
+with crossaxis work on align-items;
+flex-wrap: to getting resposiveness for web pages
