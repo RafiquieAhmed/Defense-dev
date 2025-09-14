@@ -1,0 +1,8 @@
+File Path
+
+Relative Path
+Absolute path
+
+why boiler plat code of html required ?
+1.SEO optimization
+2.sytling  excepted output performs decreases.
