@@ -1,0 +1,35 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    background-color: aliceblue;
+    gap: 5px;
+}
+.Box{
+    height: 300px;
+    width: 200px;
+}
+.first{
+    background-color: blue;
+}
+.second{
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.child{
+    height: 140px;
+    background-color: brown;
+}
