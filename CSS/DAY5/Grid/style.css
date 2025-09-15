@@ -1,0 +1,40 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    color: white;
+    font-size: large;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+.container{
+    display: grid;
+    /* grid-template-rows: 200px 200px ;
+    grid-template-columns: 200px 200px; */  /*over flow occurs*/
+    grid-template-rows: 1fr 1.5fr;
+    grid-template-columns: 1fr 2fr;
+    gap:10px;
+    padding: 10px;
+    height: 400px;
+    width: 400px;
+    background-color: palevioletred;
+}
+.first{
+    background-color: red;
+}
+.second{
+    background-color: blue;
+}
+.thrid{
+    background-color: green;
+}
+.fourth{
+    background-color: orange;
+}
