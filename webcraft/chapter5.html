@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="lightyellow">
+       <header> 
+        <center> <h1><font color="orange"><i>web craft Notes Chapterwise </i> </font></h1></center>
+        <br>
+        <br>
+    <hr>
+        <nav >
+             <pre >
+               
+     <a href="indexpage.html"><i>Home</i></a>                             <a href="Aboutpage.html"><i>About</i></a>                                                                              <a href="Chapters.html"><i>DAY WISE</i></a>                                             <a href="logpage.html"><b>LOGIN/LOgOUT</b></a>
+</pre>
+
+    </nav>
+    <hr>
+       
+       
+    </header>
+    <main>
+         <center>
+            <a href="Chapters.html" target="_blank">Lecture -1</a> 
+            <a href="chapter2.html" target="_blank">Lecture -2</a>
+            <a href="chapter3.html" target="_blank">Lecture -3</a>
+            <a href="chapter4.html" target="_blank">Lecture -4</a>
+            <a href="chapter5.html" target="_blank">Lecture -5</a>
+            <a href="chapter6.html" target="_blank">Lecture -6</a>
+        </center>
+
+        <center><h2><font color ="navy">Leacture -5 Notes</font></h2></center>
+        <div class="div"><h2>Forms</h2></div>
+        <h3>The First Principle: The Web Needs to Be a Two-Way Street</h3>
+        <p><i>The fundamental truth is that a website isn't just a brochure for you to read. For the web to be useful, it needs a way to collect information from the user and send it back to the server.
+
+          Without this, you couldn't log in, search for a video, buy a product, post a comment, or send a message. The web would be a read-only library.</i></p>
+        <br><br><br>
+        <h3><font color="red">The core Problem</font></h3>
+        <p>How do we create a standardized,realible system</p>
+        <ol>
+           <li><b>Dispaly</b>nteractive fields for a user to fill in (text boxes, checkboxes, dropdowns).</lib>
+           <li><b>Package</b>the user's data neatly.</li>
+           <li><b>send</b>that package to a specific destination on a server.</li>
+           <li><b>Tell</b>the server how the data is being sent.</li>
+        </ol>
+       <h3><font color="red">The <code>&lt;input&gt</code>Element: The Box for Your Stuff</font></h3>
+       <p>This is the most common form tag. It's a self-closing tag that creates an input field. Its behavior changes based on its type attribute.
+        The most basic type is text.</p>
+        <div class="div">
+            <hr>
+            <h4> <font color="blue">code</font></h4>
+            <code>
+                <center>
+            <code>&lt;form&gt  <br> &lt;input type="text>"<br>&lt/form&gt
+            </code>
+            </center>
+        </div>
+        <h4><font color="blue">The Need for Meaning - The <code>The &lt;label&gt</code></font></h4>
+        <p><pre><b>The Problem:</b>We have a box, but the user has no idea what they are supposed to type into it. Is it for a name? An email? A search query? The box is meaningless without a description.
+
+<b>The Solution:</b>We need to add a descriptive piece of text. The correct HTML tag for this is the &lt;label&gt . It's a tag specifically designed to be the title for a form field.</pre></p>
+
+<div class="div">
+    <code>
+        <pre>&lt;label&gt labelname:&lt/label&gt
+            &ltinput type="text">
+        </pre>
+    </code>
+</div>
+<hr>
+<h3><font color="navy">The Need for Connection -id andfor</font></h3>
+<p><i><b>The Problem:</b>How can we create a direct, unbreakable link between the label "First Name:" and its specific input box? We need this for two reasons:
+
+ <b>Usability:</b>It would be great if a user could click on the <b>text</b>of the label to activate the input box. <br>
+ <b>Accessibility:</b>Screen readers for visually impaired users need to know which label describes which input so they can announce it correctly.</i></p>
+<p><pre><b>The Solution:</b>We need a unique naming system.
+
+ First, we give our input box a unique name that no other element on the page has. The attribute for a unique name is<b>id</b>. Let's give it an id of "firstName".
+ Next, we tell the label which element it is <b>for</b>. The <b>for</b>attribute on the label must match the <b>id</b>of the input.</pre></p>
+ <img src="./Screenshot 2025-09-18 190241.png" alt="" height="300px" width="800px">
+
+    <h3>Forms all tags</h3>
+    <center>
+        <code>
+            <!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Form Tags Table</title>
+</head>
+<body>
+
+<h2>HTML Form Tags</h2>
+
+<table border="1" cellpadding="8">
+  <tr>
+    <th>Tag</th>
+    <th>Description</th>
+  </tr>
+
+  <tr>
+    <td>&lt;form&gt;</td>
+    <td>Defines an HTML form for user input</td>
+  </tr>
+
+  <tr>
+    <td>&lt;input&gt;</td>
+    <td>Defines an input field (text, password, email, etc.)</td>
+  </tr>
+
+  <tr>
+    <td>&lt;label&gt;</td>
+    <td>Defines a label for an input element</td>
+  </tr>
+
+  <tr>
+    <td>&lt;textarea&gt;</td>
+    <td>Defines a multi-line text input area</td>
+  </tr>
+
+  <tr>
+    <td>&lt;select&gt;</td>
+    <td>Defines a drop-down list</td>
+  </tr>
+
+  <tr>
+    <td>&lt;option&gt;</td>
+    <td>Defines an option inside a drop-down list</td>
+  </tr>
+
+  <tr>
+    <td>&lt;button&gt;</td>
+    <td>Defines a clickable button</td>
+  </tr>
+
+  <tr>
+    <td>&lt;fieldset&gt;</td>
+    <td>Groups related form elements</td>
+  </tr>
+
+  <tr>
+    <td>&lt;legend&gt;</td>
+    <td>Defines a caption for a &lt;fieldset&gt;</td>
+  </tr>
+
+  <tr>
+    <td>&lt;datalist&gt;</td>
+    <td>Defines a list of pre-defined options for an &lt;input&gt;</td>
+  </tr>
+
+  <tr>
+    <td>&lt;output&gt;</td>
+    <td>Displays the result of a calculation</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+        </code>
+    </center>
+    </main>
+    <footer>
+        <p><b>if you want see how it works click link below</b></p>
+        <br>
+        <a href="forms.html">form vist link</a>
+    </footer>
+    
+</body>
+</html>

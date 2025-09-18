@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="pink">
+        <header> 
+        <center> <h1><font color="puple">WebCraft Notes</font></h1></center>
+        <br>
+        <br>
+        <hr>
+        <nav >
+             <pre >
+               
+     <a href="indexpage.html"><i>Home</i></a>                             <a href="Aboutpage.html"><i>About</i></a>                                                                                 <a href="Chapters.html"><i>DAY WISE</i></a>                                             <a href="logpage.html"><b>LOGIN/LOGOUT</b></a>
+</pre>
+
+    </nav>
+    <hr>
+       
+    </header>
+<main>
+<hr>
+<center>
+<h2><i> <a href="#login">Login</a>
+    <a href="#logout">Logout</a>
+    <a href="#signup">signup</a></i></h2>
+   
+<hr>
+<br>
+<br>
+<br>
+
+    
+<div id="signup">
+     <h2>Sign Up</h2>
+
+    
+    <form action=>
+      <div>
+        <label for="fullname">Full name</label><br>
+        <input id="fullname" name="fullname" type="text" required placeholder="enter your full name">
+      </div>
+      <br>
+
+      <div>
+        <label for="username">Username</label><br>
+        <input id="username" name="username" type="text" required minlength="3" placeholder="Choose a username">
+      </div>
+      <br>
+
+      <div>
+        <label for="email">Email</label><br>
+        <input id="email" name="email" type="email" required placeholder="enter email@example.com">
+      </div>
+      <br>
+
+      <div>
+        <label for="phone">Phone (optional)</label><br>
+        <input id="phone" name="phone" type="tel" placeholder="+91 98765 43210" pattern="[0-9+\-\s()]{7,}">
+      </div>
+      <br>
+
+      <div>
+        <label for="password">Password</label><br>
+        <input id="password" name="password" type="password" required minlength="6" pattern="(?=.*\d)(?=.*[A-Za-z]).{6,}" title="At least 6 characters, including letters and numbers">
+      </div>
+      <br>
+
+      <div>
+        <label for="confirm">Confirm Password</label><br>
+
+        <input id="confirm" name="confirm" type="password" required minlength="6" placeholder="Repeat password">
+      </div>
+      <br>
+
+      <div>
+        <label>
+          <input type="checkbox" name="terms" required>
+          I agree to the Terms & Conditions
+        </label>
+      </div>
+      <br>
+
+      <div>
+        <button type="submit">Create Account</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </div>
+
+  <hr>
+
+  <!-- Login and Logout placeholders (optional) -->
+  <div id="login">
+    <h2>Login (placeholder)</h2>
+    <form>
+      <label for="login-user">Username or Email</label><br>
+      <input id="login-user" name="login-user" type="text"><br><br>
+      <label for="login-pass">Password</label><br>
+      <input id="login-pass" name="login-pass" type="password"><br><br>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <div id="logout">
+    <h2>Logout</h2>
+    <form>
+      <p>Click below to logout (placeholder):</p>
+      <button type="submit">Logout</button>
+    </form>
+  </div>
+    
+</div>
+</center>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="pink">
+    <header>
+        <h1>University Registration form</h1>
+    <p>please fill out forms</p>
+    </header>
+
+    <hr>
+    <main>
+        <h2>personal Details</h2>
+    <label for="fn">Full Name:</label>
+    <input type="text" name="name" id="fn" placeholder="enter full name of your" required>
+    <br>
+    <label for="D-o-b">DOB</label>
+    <input type="date" name="dob" id="D-o-b" required>
+    <br>
+    <h3>Gender</h3>
+    <label for="M">Male</label>
+    <input type="radio" name="Gender" id="M"value="male">
+    <br>
+    <label for="F">Female</label>
+    <input type="radio" name="Gender" id="F"value="female">
+    <br>
+    <label for="o">others</label>
+    <input type="radio" name="Gender" id="o"value="others">
+    <br>
+    <h4>upload your photo</h4>
+    <input type="file" name="file" id="">
+    <hr>
+    <h2>content info</h2>
+    <label for="Email_id">Email Id</label>
+    <input type="email" name="Email_id" id="email_id" placeholder="eg:abc123@gmail.com" required>
+    <br>
+    <label for="mobile">Phone Number</label>
+    <input type="tel" name="mobile" id="mobile">
+    <br>
+    <label for="Address">Mailing Address</label>
+    <br>
+    <textarea name="Address" id="Address" rows="7" cols="20"></textarea>
+
+    <br>
+    <h2>Academic Information</h2>
+    <label for="courses">Select  your course :</label>
+    <select name="course" id="courses">
+        <option value="cse">CSE</option>
+        <option value="ECE">ECE</option>
+        <option value="MECH">MECH</option>
+        <option value="EEE">EEE</option>
+        <option value="civil">civil</option>
+    
+    </select>
+        <br>
+        <h3>
+            Extra curricular Activites
+        </h3>
+        <label for="sports">Sports</label>
+        <input type="checkbox" name="insterst" id="sports" value="Sports">
+        <br>
+        <label for="musics">MUSICS</label>
+        <input type="checkbox" name="insterst" id="musics" value="MUSICS">
+        <br>
+        <label for="Technolgy">Sports</label>
+        <input type="checkbox" name="insterst" id="Technolgy" value="Technolgy">
+        <br>
+        <h3>Create your Account</h3>
+        <label for="pass">Create password</label>
+        <input type="password" name="password" id="pass" value="">
+        <br><br>
+        <label for="question">Security question</label>
+        <select name="question" id="question">
+            <option value="pet">What is your fav food ?</option>
+            <option value="pet">What is your fav programing subject ?</option>
+            <option value="pet">What is your fav tech youtuber ?</option>
+        </select>
+        <br>
+        <label for="ans">Security Answer</label>
+            <input type="text" name="answer" id="ans" required>
+            <br>
+            <input type="checkbox">
+            <label for="">I agree to the terms and Conditions</label>
+            <br>
+            <hr>
+            <input type="submit">
+            <button type="submit">Register</button>
+            <button type="reset">Clear</button>
+    </main>
+    
+</body>
+</html>
