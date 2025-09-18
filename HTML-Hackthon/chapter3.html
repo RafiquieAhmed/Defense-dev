@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="lightpink">
+      <header> 
+        <center> <h1><font color="orange"><i>web craft Notes Chapterwise </i> </font></h1></center>
+        <br>
+        <br>
+    <hr>
+        <nav >
+             <pre >
+               
+     <a href="indexpage.html"><i>Home</i></a>                             <a href="Aboutpage.html"><i>About</i></a>                                                                                 <a href="Chapters.html"><i>DAY WISE</i></a>                                             <a href="logpage.html"><b>LOGIN/LOgOUT</b></a>
+</pre>
+
+    </nav>
+    <hr>
+       
+       
+    </header>
+    <main>
+        <center>
+            <a href="Chapters.html" target="_blank">Lecture -1</a> 
+            <a href="chapter2.html" target="_blank">Lecture -2</a>
+            <a href="chapter3.html" target="_blank">Lecture -3</a>
+            <a href="chapter4.html" target="_blank">Lecture -4</a>
+            <a href="chapter5.html" target="_blank">Lecture -5</a>
+            <a href="chapter6.html" target="_blank">Lecture -6</a>
+        </center>
+
+        <center><h2> <font color="navy">Leacture -3 Notes</font></h2></center>
+        <hr>
+        <br><br>
+        <p>In this leacture we disscus about LISTS</p>
+        <h3><font color ="blue">what is LIST ?</font></h3>
+        <p>HTML definition lists display a word and an applicable description as a list. 
+The dl element, which is represented by <code>&lt;dl&gt; and &lt;/dl&gt;</code>, begins and concludes an HTML definition list. 
+A dt element is used to contain the phrases. 
+The dd element is used to contain the description/</p>
+
+<br><br><br><br>
+<h4><font color="blue">Nested list</font></h4>
+
+
+<center> <font><h4>Example</h4></font>
+    <code>
+        <h4>source code</h4>
+        &lt;ul&gt;<br>
+    &lt;li&gt;Fruits
+      &lt;ul&gt;<br>
+        &lt;li&gt;Apple&lt;/li&gt;<br>
+        &lt;li&gt;Banana&lt;/li&gt;<br>
+        &lt;li&gt;Mango&lt;/li&gt;<br>
+      &lt;/ul&gt;<br>
+    &lt;/li&gt;<br><br>
+
+    &lt;li&gt;Vegetables
+      &lt;ul&gt;<br>
+        &lt;li&gt;Carrot&lt;/li&gt;<br>
+        &lt;li&gt;Potato&lt;/li&gt;<br>
+        &lt;li&gt;Tomato&lt;/li&gt;<br>
+      &lt;/ul&gt;<br>
+    &lt;/li&gt;<br>
+&lt;/ul&gt;
+
+
+    </code>
+   
+</center>
+ <code>
+        <h4>Output</h4>
+    <ul>
+        <li>Frits</li>
+        <ul><li>Apple</li>
+        <li>Banana</li>
+        <li>Mango</li></ul>
+        <li>Vegetables</li>
+        <ul><li>Carrot</li>
+        <li>Potato</li>
+        <li>Tomato</li></ul>
+    </ul>
+    </code>
+    <hr>
+    <h3><font color="navy">Table</font></h3>
+    <h4><font color="red">what is Table?</font></h4>
+    <p>In HTML, a table is a structured way to display data in rows and columns. It allows web authors to organize information like text, images, links, or even other tables, into a grid-like format for better readability and understanding</p>
+<h4><font color="blue">The core elements used to create an HTML table are:</font></h4>
+<ul>
+    <li><b><code>&lt;table&gt</code></b>This is the main container tag that defines the entire table.</li>
+    <li><b><code>&lt;tr&gt</code> </b>This tag defines a table row, which is a horizontal grouping of cells.</li>
+    <li><b><code>&lt;th&gt </code></b>This tag defines a table header cell, typically used in the first row or column to label the data. By default, content within <code>&lt;th&gt </code> is bold and centered.</li>
+    <li><b><code>&lt;td&gt</code></b>This tag defines a standard table data cell, containing the actual data for each row.</li>
+</ul>
+    <h4><font color="blue">Additionally, tables can include:</font></h4>
+    <ul>
+        <li><b><code>&lt;caption&gt</code></b> Provides a descriptive caption for the table, usually appearing at the top.</li>
+        <li><b><code>&lt;thead&gt;
+  &lt;tbody&gt;
+  &lt;tfoot&gt;</code></b> These tags are used to semantically group the table's header, body, and footer sections, respectively.</li>
+        <li><b><code>&lt;colspan&gt; &lt;rowspan&gt;</code></b>These attributes can be used within <code>&lt;th&gt</code> or <code>&lt;td&gt</code> tags to make a cell span across multiple columns or rows, effectively merging them.</li>
+    </ul>
+    
+    <center><h4><font> Souurce code</font></h4></center>
+    <center><code>&lt;table border="1"&gt;<br>
+  &lt;thead&gt;<br>
+    &lt;tr&gt;<br>
+      &lt;th&gt;Name&lt;/th&gt;<br>
+      &lt;th&gt;Age&lt;/th&gt;<br>
+      &lt;th&gt;City&lt;/th&gt;<br>
+    &lt;/tr&gt;<br>
+  &lt;/thead&gt;<br>
+  &lt;tbody&gt;<br>
+    &lt;tr&gt;<br>
+      &lt;td&gt;Alice&lt;/td&gt;<br>
+      &lt;td&gt;25&lt;/td&gt;<br>
+      &lt;td&gt;London&lt;/td&gt;<br>
+    &lt;/tr&gt;<br>
+    &lt;tr&gt;<br>
+      &lt;td&gt;Bob&lt;/td&gt;<br>
+      &lt;td&gt;30&lt;/td&gt;<br>
+      &lt;td&gt;New York&lt;/td&gt;<br>
+    &lt;/tr&gt;<br>
+  &lt;/tbody&gt;<br>
+  &lt;tfoot&gt;<br>
+    &lt;tr&gt;<br>
+      &lt;td colspan="3"&gt;Table Footer&lt;/td&gt;<br>
+    &lt;/tr&gt;<br>
+  &lt;/tfoot&gt;<br>
+&lt;/table&gt;
+</code></center>
+
+
+<center>
+    
+<h4><font color="blue">Output</font></h4>
+<table border="1">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>City</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Alice</td>
+      <td>25</td>
+      <td>London</td>
+    </tr>
+    <tr>
+      <td>Bob</td>
+      <td>30</td>
+      <td>New York</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="3">Table Footer</td>
+    </tr>
+  </tfoot>
+</table>
+</center>
+
+    </main>
+    <footer>
+        <h4>Source code link</h4>
+        <a href="https://github.com/RafiquieAhmed/Defense-dev/tree/main/HTML/DAY3">link</a>
+    </footer>
+
+    
+</body>
+</html>

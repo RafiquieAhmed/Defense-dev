@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="lightgreen">
+    <header> 
+        <center> <h1><font color="orange"><i>web craft Notes Chapterwise </i> </font></h1></center>
+        <br>
+        <br>
+    <hr>
+        <nav >
+             <pre >
+               
+     <a href="indexpage.html"><i>Home</i></a>                             <a href="Aboutpage.html"><i>About</i></a>                                                                              <a href="Chapters.html"><i>DAY WISE</i></a>                                             <a href="logpage.html"><b>LOGIN/LOgOUT</b></a>
+</pre>
+
+    </nav>
+    <hr>
+       
+       
+    </header>
+    <main>
+                <center>
+            <a href="Chapters.html" target="_blank">Lecture -1</a> 
+            <a href="chapter2.html" target="_blank">Lecture -2</a>
+            <a href="chapter3.html" target="_blank">Lecture -3</a>
+            <a href="chapter4.html" target="_blank">Lecture -4</a>
+            <a href="chapter5.html" target="_blank">Lecture -5</a>
+            <a href="chapter6.html" target="_blank">Lecture -6</a>
+        </center>
+
+        <center><h2><font color="navy">Leacture -4 Note</font></h2>
+            <h2><font color="purple">File Path system</font></h2>
+        </center>
+
+        <div class="path">
+            <h3><font color="navy">Step 1: The First Principle (The Fundamental Truth)</font></h3>
+            <br>
+            <p><pre>The most fundamental truth is this: <b>A website is not one single file.</b>
+                It's a collection of different files (HTML, CSS, JavaScript, images, videos, fonts) that all need to work together. These files are organized into folders, just like documents on your computer.</pre></p>
+        <h3><font color="navy">Step 2: The Core Problem</font></h3>
+        <p><pre>
+            Now we have a core problem: If your <i>index.htm</i>file needs to display an image named <i>ogo.png,</i>, 
+            how does the HTML file tell the browser where to <i>find</i>logo.png?
+            ou can't just say src="logo.png" and expect it to work every time. What if the logo is in an imagesfolder? What if it's on a completely different website?
+        </pre></p>
+
+        <div class="path-A">
+            <h3><font color ="navy"> Relative File Paths (The Most Important for Your Projects)</font></h3>
+            <p>A relative file path gives directions to a file starting from the location of the file you are currently in. You will use this 99% of the time for linking your own files together (images, CSS, other HTML pages).</p>
+            <center><img src="./pics/Screenshot 2025-09-18 200906.png" alt="structure of folder path" height="400px" width="1000px"></center>
+            <h3><font color="red">Linking Files Using Relative Paths</font></h3>
+            <ul>
+                <li>Scenario 1: Same Folder</li>
+                <ul>
+                    <li><b>Situation:</b> index.html → about.html (both in same folder)</li>
+                    <li><b>Path:</b> Just use the filename.</li>
+                    <li><b>Example:</b></li>
+                    <h3><pre>                        &lt;a href ="filename.extension" file name &gt </pre>  </h3>
+                </ul>
+                <li>Scenario 2: Sub-Folder (Going Down)</li>
+                <ul><li><b>Situation: </b>index.html → images/logo.png (inside a subfolder)</li>
+                <li><b>Path:</b>Folder name + / + filename.</li>
+                <li>Example</li></ul>
+                <h3><font color="yellow"><pre>                            &lt;img src ="file pathlocation"alt="describe"&gt
+
+                  eg:  src=images/logo.png
+                </pre></font></h3>
+                
+                <li><font color ="red">Scenario 3: Parent Folder (Going Up)</font></li>
+                <li><b>Situation:</b>pages/contact.html → images/logo.png (in a sibling folder)</li>
+                <li><b>Path:</b>Use ../ to go up one level, then go down into the target folder.</li>
+            
+                <li>Expample</li>
+                <h3><font color="red">&lt src="../images/logo.png" alt="my website lof &gt</font></h3>
+            </ul>
+        </div>
+        <div class="path-B">
+            <h3><font color ="navy">Absolute File Paths</font></h3>
+            <h4>What It Is</h4>
+            <ul>
+                <li>An absolute path gives the full, complete address (URL) of a resource.</li>
+                <li>It starts with http:// or https:// when used on the web.</li>
+                <li>It points to the exact location on the internet, not relative to your HTML file.</li>
+            </ul>
+            <hr>
+            <h4>When to Use</h4>
+            <span><i>Use absolute paths only for external resources (not on your own website):</i></span>
+            <ul>
+                <li>Linking to another website</li>
+                <li>Loading fonts from Google Fonts</li>
+                <li>Loading images or scripts from other servers</li>
+            </ul>
+            <span>
+                <h3>example</h3>
+                <h3>Absolute File Paths</h3>
+
+  <p>
+    An absolute file path gives the <strong>full, complete URL</strong> to a resource on the web.
+    It starts with <code>http://</code> or <code>https://</code>.
+    Use it only for files that are <strong>not on your own website</strong>.
+  </p>
+
+  <h3>Example 1: Linking to another website</h3>
+  <a href="https://www.google.com" target="_blank">Search on Google</a>
+
+  <h3>Example 2: Using an image hosted on another server</h3>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Html5_logo_and_wordmark.svg" 
+       alt="HTML5 Logo" width="200px">
+
+  <hr>
+
+  <h3>Why Not Use Absolute Path for Local Files?</h3>
+  <p>
+    Do not use full local computer paths like 
+    <code>C:/Users/Arjun/Desktop/my-website/images/logo.png</code> 
+    because they only work on <strong>your computer</strong> and break on the internet.
+  </p>
+
+  <h3>Example of a Wrong Local Absolute Path</h3>
+  <code>&lt;img src="C:/Users/Arjun/Documents/MyPrivatePasswords.txt"&gt;</code>
+
+  <p>
+    Browsers block this to protect your private files (this protection is called a 
+    <strong>security sandbox</strong>).
+  </p>
+
+  <hr>
+
+  <h3>Absolute Path in Windows</h3>
+  <p>Format: <code>Drive:\Folder\SubFolder\file.txt</code></p>
+  <p>Example: <code>C:\Users\JohnDoe\Documents\report.docx</code></p>
+            </span>
+            <img src="./pics/d4.svg" alt="" srcset="" height="1000px"width="600px">
+
+            
+
+
+
+
+        </div>
+        <hr>
+
+            </div>
+            <div class="html5-boiler">
+                <h3><font color="navy">HTML Boilerplate</font></h3>
+                <ul>
+                    <ol>
+                        <h4><font color="green">Why We Need It</font></h4>
+                        <li>Browsers need clear instructions before showing any content.</li>
+                        <li>Boilerplate gives essential setup info: HTML version, language, character encoding, page title, and mobile behavior.</li>
+                        <li>Without it, browsers enter quirks mode which can cause unpredictable errors.</li>
+                    </ol>
+                    <h4><font color="green">Boilerplate Structure</font></h4>
+                    <img src="./pics/Screenshot 2025-09-18 204920.png" alt="">
+                    <h4><li><font color="purple">Purpose of Each Part</font></li></h4>
+                    <ul>
+                        <li><b>&lt;!DOCTYPE html&gt  </b>Tells browser to use modern HTML5 standards.</li>
+                        <li><b>&lt;html lang="en"&gt</b> Declares page language (important for SEO & accessibility).</li>
+                        <li><b>&lt;head&gt</b>Contains setup info (not shown on the page).</li>
+                        <li><b>&lt;meta charset="UTF-8" &gt</b>Prevents broken characters.</li>
+                        <li><b>&lt;meta name="viewport"&gt</b>Makes site mobile-friendly and responsive.</li>
+                        <li><b>&lt;tiltle&gt</b>Sets browser tab name.</li>
+                        <li><b>&lt;body&gt</b>Holds all visible content.</li>
+                        
+                    </ul>
+                    <h4><font color="purple"><body> Why Not Skip It</font></h4>
+                        <li>Prevents quirks mode</li>
+                        <li>Prevents broken characters</li>
+                        <li>Enables responsive design</li>
+                        <li>Improves SEO and accessibility</li>
+                </ul>
+                <center><h3><font color="navy">Boilerplate = foundation of a stable, professional website.</font></h3></center>
+                <ul>
+                    <hr>
+                    <h4><font color="green">Multipage Websites</font></h4>
+                    <li>Break content into separate pages (home, about, contact).</li>
+                    <li>Each page uses the same boilerplate and consistent header/footer.</li>
+                    <li>Connect pages using <a> links (navigation bar).</li>
+                        <h4>source code:</h4>
+                       <font color ="blue"> <p><code>&lt;a href ="index1.html" atl=""&gt link-name &lt;/a&gt</code></p></font>
+                       <hr>
+                       <li><font color="green">Grouping & Labeling Content</font></li>
+                       <ul><li><b>&lt;div&gt Generic Block Container</b></li>
+                        <ul>
+                            <li>Groups multiple elements into one box (like a profile card).</li>
+                        </ul>
+                        <li><font color="green"><b>class vs id</b></font></li>
+                        <ul>
+                            <li>id: unique label (only one per page).</li>
+                            <li>class: reusable label (used on many elements).</li>
+                            <center><font color="blue"><code>&lt;div id="main-div"&gt &lt;div&gt <br>&lt;div class="div"&gt &lt;div&gt</code></font></center>
+
+                        </ul>
+                        <h4><font color="green"><li><code>&lt;span&gt </code>  Inline Container</li></font></h4>
+                        <li>Wraps part of text without breaking the line.</li>
+                        <center><p> code: <br> <font color="blue">&lt;p&gt This is &ltspan&gt class="highlight"&gt important&lt;/span&gt info.&lt;p&gt</code></font></p></center>
+                        <p>output <br><p>This is <span class="highlight">important</span> info.</p></p>
+
+
+                    </ul>
+                    <hr>
+                    <li><h4><font color="red">Semantic Layout Tags</font></h4></li>
+
+                    <li><code><b>&lt;header&gt</b></code>: Top section (logo, nav, main heading)</li>
+                    <li><code><b>&lt;main&gt</b></code>: Bottom section (copyright, contact)</li>
+                    <li><code><b>&lt;footer&gt</b></code>The unique content of the page (only one per page)</li>
+                </ul>
+            </div>
+
+
+
+    </main>
+        
+</body>
+</html>
