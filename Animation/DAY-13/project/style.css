@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    display: flex;
+
+    justify-content: center;
+    padding-top: 20%;
+
+}
+.container{
+    background-color: white;
+    border: 1 px solid navy;
+    font-size: 40px;
+    padding: 10px;
+    color: fuchsia;
+    width: 70%;
+    border-radius: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+p{
+    margin-left: 100%;
+    animation-name: txtmove;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes txtmove {
+    from{
+        margin-left: 100%;
+    }
+    to{
+        margin-left: -100%;
+    }
+
+
+    
+}
