@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+}
+.container{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    perspective: 800px;
+    /* making 3d */
+    
+}
+.box{
+    height: 150px;
+    width: 150px;
+    background-color: orange;
+    cursor: pointer;
+    /* transform: translate(200px,300px); */
+      /* transform:rotate(45deg) ; */
+      /* transform: skew(30deg); */
+      /* transform: skewX(30deg); */
+
+    /* transition-property: background-color; */
+    /* transition-property: height; */
+    /* transition-duration: all;
+    transition-duration: 3s;
+    transition-timing-function: ease-in;
+    transition-delay: 2s; */
+    /* transition: all 3s ease-in 2s; */
+    /* transition: all 3s; */
+    animation-name: moving;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes moving {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+/* .box:hover{
+    background-color: blue;
+    width: 300px;
+    height: 300px;
+} */
+ .box:hover{
+    /* transform: scaleY(2); */
+    /* width: 300px; */
+    /* transform:rotate(45deg) ; */
+    /* transform: translateZ(200px); */
+    /* transform: rotateX(90deg); */
+    background-color: blue;
+
+ }
