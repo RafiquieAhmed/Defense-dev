@@ -1,0 +1,22 @@
+0:00 Introduction  
+1:05 Basic Functions  
+2:20 Calling Functions  
+3:10 Function Reusability  
+3:19 Parameters & Arguments  
+4:40 Default Values  
+5:43 Rest Operator (...)  
+9:57 Sum with Rest & Loop  
+10:59 Spread vs Rest  
+16:16 Declaration vs Expression  
+18:00 Arrow Functions  
+20:40 Arrow Implicit Return  
+26:55 Arrow Single Parameter  
+30:33 Arrow Return Object  
+31:14 Calling Arrow Functions  
+32:27 IIFE (Immediately Invoked Function)  
+34:50 Arrow Function IIFE  
+35:26 Callbacks  
+39:17 Callback Use Case  
+45:26 Callback Example: Payment & Order  
+48:58 Why Callbacks Matter  
+52:48 Conclusion & Homework (Closures)
