@@ -1,0 +1,10 @@
+WHAT YOU WILL LEARN IN THIS VIDEO:
+The role of the JavaScript Engine (like V8 in Chrome & Node.js).
+Why computers can't understand JavaScript directly (and the solution!).
+The Two Phases of Code Execution: Creation vs. Execution.
+Demystifying Hoisting: See why `var`, `let`, and `const` behave differently.
+The Call Stack: A visual, step-by-step guide to how functions are managed.
+The Memory Heap: Where do your objects, arrays, and functions live?
+Function Execution Context: What happens every single time a function is called.
+The Program Counter & Return Address: How JS knows where to return after a function finishes.
+A complete code walkthrough showing the entire process in action.
