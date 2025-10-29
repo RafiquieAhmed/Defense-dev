@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calucator">
+            <h1>Java script <br><span>Age calucator </span> </h1>
+            <div class="input-box">
+                <input type="date" id ="date">
+                <button onclick="calucatorAge()">calucator</button>
+            </div>
+            <p id ="result"></p>
+        </div>
+    </div>
+    
+</body>
+<script>
+    let userInput =document.getElementById("date")
+    userInput.max=new Date().toISOString().split("T")[0];
+    let result =document.getElementById("result");
+    function calucatorAge(){
+        let birth_Date =new Date(userInput.value);
+
+        let date_1=birth_Date.getDate();
+        let month_1=birth_Date.getMonth()+1;
+        let year_1=birth_Date.getFullYear();
+
+        let today =new Date;
+
+        let date_2 =today.getDate();
+        let month_2=today.getMonth()+1;
+        let year_2=today.getFullYear();
+
+        let date_3,month_3,year_3;
+        year_3=year_2-year_1;
+    
+        if(month_2>=month_1){
+            month_3=month_2- month_1;
+        }
+        else{
+            year_3--;
+            month_3=12+month_2-month_1;
+        }
+        if(date_2>=date_1){
+            date_3=date_2 -date_1;
+        }
+        else{
+            month_3--;
+            date_3=getDaysINMonth(year_1,month_1)+date_2-date_1;
+        }
+        if(month_3<0){
+            month_3=11;
+            year_3--;
+        }
+        result.innerHTML =`your ${year_3} years, ${month_3} months , ${date_3} days old `;
+    }
+    function getDaysINMonth(year,month){
+        return new Date(year,month,0).getDate();
+    }
+</script>
+</html>
